@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GiaoDien</title>
+<link rel="stylesheet" href="Menu12.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+a:visited {
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.jumbotron {
+	background-color: #f4511e;
+	color: #fff;
+	padding: 100px 25px;
+}
+
+.container-fluid {
+	padding: 60px 50px;
+}
+
+.bg-grey {
+	background-color: #f6f6f6;
+}
+
+.logo-small {
+	color: #f4511e;
+	font-size: 50px;
+}
+
+.logo {
+	color: #f4511e;
+	font-size: 200px;
+}
+
+.thumbnail {
+	padding: 0 0 15px 0;
+	border: none;
+	border-radius: 0;
+}
+
+.thumbnail img {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 10px;
+}
+
+.carousel-control.right, .carousel-control.left {
+	background-image: none;
+	color: #f4511e;
+}
+
+.carousel-indicators li {
+	border-color: #f4511e;
+}
+
+.carousel-indicators li.active {
+	background-color: #f4511e;
+}
+
+.item h4 {
+	font-size: 19px;
+	line-height: 1.375em;
+	font-weight: 400;
+	font-style: italic;
+	margin: 70px 0;
+}
+
+.item span {
+	font-style: normal;
+}
+
+@media screen and (max-width: 768px) {
+	.col-sm-4 {
+		text-align: center;
+		margin: 25px 0;
+	}
+}
+
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	border: 1px solid #888;
+	width: 80%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+		rgba(0, 0, 0, 0.19);
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s
+}
+
+/* Add Animation */
+@
+-webkit-keyframes animatetop {
+	from {top: -300px;
+	opacity: 0
+}
+
+to {
+	top: 0;
+	opacity: 1
+}
+
+}
+@
+keyframes animatetop {
+	from {top: -300px;
+	opacity: 0
+}
+
+to {
+	top: 0;
+	opacity: 1
+}
+
+}
+
+/* The Close Button */
+.close {
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal-header {
+	padding: 2px 16px;
+	background-color: #5cb85c;
+	color: white;
+}
+
+.modal-body {
+	padding: 2px 16px;
+}
+
+.modal-footer {
+	padding: 2px 16px;
+	background-color: #5cb85c;
+	color: white;
+}
+</style>
+</head>
+<body style="background-color: white;">
+	<div><img src="hinh/2.jpg" alt="X" style="width: 100%; height: 300px;"> </div>
+	<div class="topnav">
+	<a href="test.html">TRANG CHỦ</a>
+	<a href="GioiThieu.html">GIỚI THIỆU</a>
+	<a href="LICHHOC.html">LỊCH HỌC</a>
+	<a href="LICHTHI1.html">LỊCH THI</a>
+	<a href="TaiKhoan.html">TÀI KHOẢN</a>
+	<a href="url">ĐĂNG NHẬP</a>
+	 <input
+			type="text" name="firstname" value="Tìm kiếm"
+			style="padding-left: 5px; margin-top: 12px; width: 130px;">
+		<div class="clear"></div>
+	</div>
+	<div id="myCarousel" class="carousel slide text-center"
+		data-ride="carousel">
+		<!-- Indicators -->
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img src="hinh/33.jpg" alt="X" style="width: 100%; height: 300px;">
+			</div>
+			<div class="item">
+				<img src="hinh/Anh1.jpg" alt="X" style="width: 100%; height: 300px;">
+			</div>
+			<div class="item">
+				<img src="hinh/11.jpg" alt="X" style="width: 100%; height: 300px;">
+			</div>
+		</div>
+	</div>
+	<div class="row" style="margin-left: 5px; margin-right: 5px;">
+		<div class="col-lg-8">
+			<div class="row" style="margin-left: 5px; margin-right: 5px;">
+				<div class="col-lg-6">
+					<h2 style="background-color: #111111; color: White;">
+						<button id="myBtn1"
+							style="background-color: #111111; border: 1px solid #111111;">Giới Thiệu Sơ Lượt</button>
+					</h2>
+					<p style="text-align: justify;">
+						<img src="hinh/h1.png" alt="X"
+							style="width: 100px; height: 100px; float: right; padding-left: 5px">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+						sit amet pretium urna. Vivamus venenatis velit nec neque
+						ultricies, eget elementum magna tristique. Quisque vehicula, risus
+						eget aliquam placerat, purus leo tincidunt eros, eget luctus quam
+						orci in velit. Praesent scelerisque tortor sed accumsan convallis...
+					</p>
+				</div>
+				<div class="col-lg-6">
+					<h2 style="background-color: #111111; color: White;">
+						<button id="myBtn2"
+							style="background-color: #111111; border: 1px solid #111111;">Cách Thức Hoạt Động</button>
+					</h2>
+					<p style="text-align: justify;">
+						<img src="hinh/h1.png" alt="X"
+							style="width: 100px; height: 100px; float: right; padding-left: 5px">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+						sit amet pretium urna. Vivamus venenatis velit nec neque
+						ultricies, eget elementum magna tristique. Quisque vehicula, risus
+						eget aliquam placerat, purus leo tincidunt eros, eget luctus quam
+						orci in velit. Praesent scelerisque tortor sed accumsan convallis...
+					</p>
+				</div>
+				<div class="col-lg-6">
+					<h2 style="background-color: #111111; color: White;">
+						<button id="myBtn3"
+							style="background-color: #111111; border: 1px solid #111111;">Lợi Ích Web</button>
+					</h2>
+					<p style="text-align: justify;">
+						<img src="hinh/h1.png" alt="X"
+							style="width: 100px; height: 100px; float: right; padding-left: 5px">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+						sit amet pretium urna. Vivamus venenatis velit nec neque
+						ultricies, eget elementum magna tristique. Quisque vehicula, risus
+						eget aliquam placerat, purus leo tincidunt eros, eget luctus quam
+						orci in velit. Praesent scelerisque tortor sed accumsan convallis...
+					</p>
+				</div>
+				<div class="col-lg-6">
+					<h2 style="background-color: #111111; color: White;">
+						<button id="myBtn4"
+							style="background-color: #111111; border: 1px solid #111111;">Hướng Tư Duy Phát Triển</button>
+					</h2>
+					<p style="text-align: justify;">
+						<img src="hinh/h1.png" alt="X"
+							style="width: 100px; height: 100px; float: right; padding-left: 5px">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+						sit amet pretium urna. Vivamus venenatis velit nec neque
+						ultricies, eget elementum magna tristique. Quisque vehicula, risus
+						eget aliquam placerat, purus leo tincidunt eros, eget luctus quam
+						orci in velit. Praesent scelerisque tortor sed accumsan convallis...
+					</p>
+				</div>
+				<div class="col-lg-6">
+					<h2 style="background-color: #111111; color: White;">
+						<button id="myBtn5"
+							style="background-color: #111111; border: 1px solid #111111;">Định Hướng Thành Công</button>
+					</h2>
+					<p style="text-align: justify;">
+						<img src="hinh/h1.png" alt="X"
+							style="width: 100px; height: 100px; float: right; padding-left: 5px">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+						sit amet pretium urna. Vivamus venenatis velit nec neque
+						ultricies, eget elementum magna tristique. Quisque vehicula, risus
+						eget aliquam placerat, purus leo tincidunt eros, eget luctus quam
+						orci in velit. Praesent scelerisque tortor sed accumsan convallis...
+					</p>
+				</div>
+				<div class="col-lg-6">
+					<h2 style="background-color: #111111; color: White;">
+						<button id="myBtn6"
+							style="background-color: #111111; border: 1px solid #111111;">Thông Tin Thêm</button>
+					</h2>
+					<p style="text-align: justify;">
+						<img src="hinh/h1.png" alt="X"
+							style="width: 100px; height: 100px; float: right; padding-left: 5px">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+						sit amet pretium urna. Vivamus venenatis velit nec neque
+						ultricies, eget elementum magna tristique. Quisque vehicula, risus
+						eget aliquam placerat, purus leo tincidunt eros, eget luctus quam
+						orci in velit. Praesent scelerisque tortor sed accumsan convallis...
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4">
+			<img src="hinh/20.jpg" alt="X"
+				style="width: 100%; height: 200px; padding: 10px"> <img
+				src="hinh/12.jpg" alt="X"
+				style="width: 100%; height: 200px; padding: 10px"> <img
+				src="hinh/15.jpg" alt="X"
+				style="width: 100%; height: 200px; padding: 10px">
+		</div>
+	</div>
+	<footer
+		style="background-color: #111111; color: White; margin-top: 10px; width: 100%;">
+		<div class="row">
+			<div style="margin-top: 15px;">
+				<div class="col-lg-8" style="boder-right: 1px solid white;">Mọi
+					cố gắn và nỗi lực sẽ giúp chúng ta phát triển những kĩ năng cần
+					thiết cho thành quả trong tương lại,học tập mỗi ngày trên LEARN FOR
+					YOURSELF tôi đã thành công, còn bạn thì sao? Tại đây chúng tôi cung cấp những dịch vụ tốt nhất tối ưu và hiện đại
+					giúp bạn sớm đạt được mục tiêu của mình</div>
+				<div class="col-lg-4">
+					<p>ĐỊA CHỈ MAIL: Learnforyourself@gmail.com</p>
+					<p>FACEBOOK: Learnforyourself</p>
+					<p>SĐT: 09093334443</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div id="myModal1" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content cusmodal" style="width: 80%;">
+			<div class="modal-header">
+				<span class="close">&times;</span>
+				<h2>Giới Thiệu Sơ Lượt</h2>
+			</div>
+			<div class="modal-body">
+
+
+				<div class="container"></div>
+				<h2 style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque
+					ultricies, eget elementum magna tristique. Quisque vehicula, risus
+					eget aliquam placerat, purus leo tincidunt eros, eget luctus quam
+					orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+					sit amet pretium urna. Vivamus venenatis velit nec neque ultricies,
+					eget elementum magna tristique. Quisque vehicula, risus eget
+					aliquam placerat, purus leo tincidunt eros, eget luctus quam orci
+					in velit. Praesent scelerisque tortor sed accumsan convallis. Lorem
+					ipsum dolor sit amet, consectetur adipiscing elit. Maecenas</h2>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div id="myModal2" class="modal">
+
+		<div class="modal-content cusmodal" style="width: 80%;">
+			<div class="modal-header">
+				<span class="close">&times;</span>
+				<h2>Cách Thức Hoạt Động</h2>
+			</div>
+			<div class="modal-body">
+
+
+				<div class="container"></div>
+				<h2 style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque
+					ultricies, eget elementum magna tristique. Quisque vehicula, risus
+					eget aliquam placerat, purus leo tincidunt eros, eget luctus quam
+					orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+					sit amet pretium urna. Vivamus venenatis velit nec neque ultricies,
+					eget elementum magna tristique. Quisque vehicula, risus eget
+					aliquam placerat, purus leo tincidunt eros, eget luctus quam orci
+					in velit. Praesent scelerisque tortor sed accumsan convallis. Lorem
+					ipsum dolor sit amet, consectetur adipiscing elit. Maecenas</h2>
+			</div>
+		</div>
+ 
+	</div>
+	<div id="myModal3" class="modal">
+
+		<div class="modal-content cusmodal" style="width: 80%;">
+			<div class="modal-header">
+				<span class="close">&times;</span>
+				<h2>Lợi Ích Sử Dụng Web</h2>
+			</div>
+			<div class="modal-body">
+
+
+				<div class="container"></div>
+				<h2 style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque
+					ultricies, eget elementum magna tristique. Quisque vehicula, risus
+					eget aliquam placerat, purus leo tincidunt eros, eget luctus quam
+					orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+					sit amet pretium urna. Vivamus venenatis velit nec neque ultricies,
+					eget elementum magna tristique. Quisque vehicula, risus eget
+					aliquam placerat, purus leo tincidunt eros, eget luctus quam orci
+					in velit. Praesent scelerisque tortor sed accumsan convallis. Lorem
+					ipsum dolor sit amet, consectetur adipiscing elit. Maecenas</h2>
+			</div>
+		</div>
+
+	</div>
+	<div id="myModal4" class="modal">
+
+		<div class="modal-content cusmodal" style="width: 80%;">
+			<div class="modal-header">
+				<span class="close">&times;</span>
+				<h2>Hướng Tư Duy Phát Triển</h2>
+			</div>
+			<div class="modal-body">
+
+
+				<div class="container"></div>
+				<h2 style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque
+					ultricies, eget elementum magna tristique. Quisque vehicula, risus
+					eget aliquam placerat, purus leo tincidunt eros, eget luctus quam
+					orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+					sit amet pretium urna. Vivamus venenatis velit nec neque ultricies,
+					eget elementum magna tristique. Quisque vehicula, risus eget
+					aliquam placerat, purus leo tincidunt eros, eget luctus quam orci
+					in velit. Praesent scelerisque tortor sed accumsan convallis. Lorem
+					ipsum dolor sit amet, consectetur adipiscing elit. Maecenas</h2>
+			</div>
+		</div>
+
+	</div>
+	<div id="myModal5" class="modal">
+
+		<div class="modal-content cusmodal" style="width: 80%;">
+			<div class="modal-header">
+				<span class="close">&times;</span>
+				<h2>Định Hướng Thành Công</h2>
+			</div>
+			<div class="modal-body">
+
+
+				<div class="container"></div>
+				<h2 style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque
+					ultricies, eget elementum magna tristique. Quisque vehicula, risus
+					eget aliquam placerat, purus leo tincidunt eros, eget luctus quam
+					orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+					sit amet pretium urna. Vivamus venenatis velit nec neque ultricies,
+					eget elementum magna tristique. Quisque vehicula, risus eget
+					aliquam placerat, purus leo tincidunt eros, eget luctus quam orci
+					in velit. Praesent scelerisque tortor sed accumsan convallis. Lorem
+					ipsum dolor sit amet, consectetur adipiscing elit. Maecenas</h2>
+			</div>
+		</div>
+
+	</div>
+	<div id="myModal6" class="modal">
+
+		<div class="modal-content cusmodal" style="width: 80%;">
+			<div class="modal-header">
+				<span class="close">&times;</span>
+				<h2>Thông Tin Thêm</h2>
+			</div>
+			<div class="modal-body">
+
+
+				<div class="container"></div>
+				<h2 style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque
+					ultricies, eget elementum magna tristique. Quisque vehicula, risus
+					eget aliquam placerat, purus leo tincidunt eros, eget luctus quam
+					orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+					sit amet pretium urna. Vivamus venenatis velit nec neque ultricies,
+					eget elementum magna tristique. Quisque vehicula, risus eget
+					aliquam placerat, purus leo tincidunt eros, eget luctus quam orci
+					in velit. Praesent scelerisque tortor sed accumsan convallis. Lorem
+					ipsum dolor sit amet, consectetur adipiscing elit. Maecenas</h2>
+			</div>
+		</div>
+
+	</div>
+	<script>
+		// Get the modal
+		var modal1 = document.getElementById('myModal1');
+
+		// Get the button that opens the modal
+		var btn1 = document.getElementById("myBtn1");
+
+		// Get the <span> element that closes the modal
+		var span1 = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal 
+		btn1.onclick = function() {
+			modal1.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span1.onclick = function() {
+			modal1.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event1) {
+			if (event1.target == modal1) {
+				modal1.style.display = "none";
+			}
+		}
+		// Get the modal
+		var modal2 = document.getElementById('myModal2');
+
+		// Get the button that opens the modal
+		var btn2 = document.getElementById("myBtn2");
+
+		// Get the <span> element that closes the modal
+		var span2 = document.getElementsByClassName("close")[1];
+
+		// When the user clicks the button, open the modal 
+		btn2.onclick = function() {
+			modal2.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span2.onclick = function() {
+			modal2.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event2) {
+			if (event2.target == modal2) {
+				modal2.style.display = "none";
+			}
+		}
+		// Get the modal
+		var modal3 = document.getElementById('myModal3');
+
+		// Get the button that opens the modal
+		var btn3 = document.getElementById("myBtn3");
+
+		// Get the <span> element that closes the modal
+		var span3 = document.getElementsByClassName("close")[2];
+
+		// When the user clicks the button, open the modal 
+		btn3.onclick = function() {
+			modal3.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span3.onclick = function() {
+			modal3.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event3) {
+			if (event3.target == modal3) {
+				modal3.style.display = "none";
+			}
+		}
+		// Get the modal
+		var modal4 = document.getElementById('myModal4');
+
+		// Get the button that opens the modal
+		var btn4 = document.getElementById("myBtn4");
+
+		// Get the <span> element that closes the modal
+		var span4 = document.getElementsByClassName("close")[3];
+
+		// When the user clicks the button, open the modal 
+		btn4.onclick = function() {
+			modal4.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span4.onclick = function() {
+			modal4.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event4) {
+			if (event4.target == modal4) {
+				modal4.style.display = "none";
+			}
+		}
+		// Get the modal
+		var modal5 = document.getElementById('myModal5');
+
+		// Get the button that opens the modal
+		var btn5 = document.getElementById("myBtn5");
+
+		// Get the <span> element that closes the modal
+		var span5 = document.getElementsByClassName("close")[4];
+
+		// When the user clicks the button, open the modal 
+		btn5.onclick = function() {
+			modal5.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span5.onclick = function() {
+			modal5.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event5) {
+			if (event5.target == modal5) {
+				modal5.style.display = "none";
+			}
+		}
+		// Get the modal
+		var modal6 = document.getElementById('myModal6');
+
+		// Get the button that opens the modal
+		var btn6 = document.getElementById("myBtn6");
+
+		// Get the <span> element that closes the modal
+		var span6 = document.getElementsByClassName("close")[5];
+
+		// When the user clicks the button, open the modal 
+		btn6.onclick = function() {
+			modal6.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span6.onclick = function() {
+			modal6.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event6) {
+			if (event6.target == modal6) {
+				modal6.style.display = "none";
+			}
+		}
+	</script>
+</body>
+</html>
